@@ -1,0 +1,7 @@
+.App {
+    /* padding: 5%; */
+}
+
+#pie-chart {
+    transform: rotate(-90deg);
+}
