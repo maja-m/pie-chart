@@ -23,14 +23,12 @@ class App extends Component {
     return [x, y];
   }
 
-  colors = ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige"];
-
   getSlicesData() {
     const slices = Object.keys(this.state.data);
     const total = Object.values(this.state.data).reduce((total, value) => (total += value), 0);
 
     const slices2 = slices.map((slice, i) => {
-      return { percent: this.state.data[slice] / total, color: this.colors[i] };
+      return { percent: this.state.data[slice] / total };
     });
 
     return slices2;
@@ -54,7 +52,7 @@ class App extends Component {
           key={`slice-${i}`}
           d={pathData}
           fill={
-            "hsl(" + 360 * Math.random() + "," + (25 + 70 * Math.random()) + "%," + (85 + 10 * Math.random()) + "%)"
+            "hsl(" + 360 * Math.random() + "," + (20 + 70 * Math.random()) + "%," + (85 + 10 * Math.random()) + "%)"
           }
         />
       );
