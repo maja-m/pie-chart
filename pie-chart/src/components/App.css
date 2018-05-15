@@ -1,9 +1,27 @@
-.App {
-  /* padding: 5%; */
+body {
+  font-family: arial, sans-serif;
 }
 
 #pie-chart {
   transform: rotate(-90deg);
   width: 400px;
   height: auto;
+}
+
+.miauczButton {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
