@@ -23,7 +23,7 @@ class App extends Component {
     return [x, y];
   }
 
-  colors = ["Coral", "CornflowerBlue", "#00ab6b", "burlywood", "pink"];
+  colors = ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige"];
 
   getSlicesData() {
     const slices = Object.keys(this.state.data);
@@ -49,7 +49,15 @@ class App extends Component {
 
       const pathData = [`M ${startX} ${startY}`, `A 1 1 0 ${largeArcFlag} 1 ${endX} ${endY}`, `L 0 0`].join(" ");
 
-      return <path key={`slice-${i}`} d={pathData} fill={slice.color} />;
+      return (
+        <path
+          key={`slice-${i}`}
+          d={pathData}
+          fill={
+            "hsl(" + 360 * Math.random() + "," + (25 + 70 * Math.random()) + "%," + (85 + 10 * Math.random()) + "%)"
+          }
+        />
+      );
     });
 
     return <svg viewBox="-1 -1 2 2">{paths}</svg>;

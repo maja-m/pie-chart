@@ -7,7 +7,7 @@ class KotComponent extends Component {
     super();
 
     this.state = {
-      kot: null
+      koty: []
     };
   }
 
@@ -15,10 +15,7 @@ class KotComponent extends Component {
     const imie = window.prompt("Podaj imię kota: ");
     const waga = window.prompt("Podaj wagę kota:");
     if (imie && waga) {
-      //this.setState({ kot: new Kot(imie, waga, random) });
-      this.state.kot = new Kot(imie, waga, random);
-      document.getElementById("miauczButton" + this.state.kot.id).style.display = "inline";
-      document.getElementById("miauczButton" + this.state.kot.id).innerText = "Miaucz " + this.state.kot.imie;
+      this.setState({ koty: [...this.state.koty, new Kot(imie, waga, random)] });
     } else {
       alert("Podaj wartości dla imienia i wagi kota.");
     }
@@ -32,10 +29,14 @@ class KotComponent extends Component {
     const random = Math.floor(Math.random() * 1000 + 1);
     return (
       <div>
+        {this.state.koty.map((kot, i) => {
+          return (
+            <div key={kot.id}>
+              <button onClick={() => kot.miaucz()}>Miaucz {kot.imie}</button>
+            </div>
+          );
+        })}
         <button onClick={() => this.dodajKota(random)}>Dodaj kota</button>
-        <button id={"miauczButton" + random} className="miauczButton" onClick={() => this.miaucz()}>
-          Miaucz
-        </button>
       </div>
     );
   }

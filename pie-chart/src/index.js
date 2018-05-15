@@ -26,92 +26,94 @@ ReactDOM.render(
     <KotComponent />
     <h3>Zadanie 7</h3>
     <table>
-      <tr>
-        <td>Wiem czym się różni EcmaScript 6 od ES5</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Wiem co nowego jest w ES7 lub ES8</td>
-        <td>N</td>
-      </tr>
-      <tr>
-        <td>
-          Potrafię pisać testy automatyczne zachowania stron internetowych przy pomocy narzędzi (np. Selenium, CasperJS,
-          TestComplete Web, TestCafe)
-        </td>
-        <td>N</td>
-      </tr>
-      <tr>
-        <td>Potrafię pisać szablony typu Mako, Jinja lub inne</td>
-        <td>N</td>
-      </tr>
-      <tr>
-        <td>Bez problemu czytam dokumentację w języku angielskim</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Potrafię pisać dokumentację w języku angielskim</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Potrafię pracować na systemie Linux (np. Ubuntu)</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Potrafię pracować na systemie OS X</td>
-        <td>Raczej T</td>
-      </tr>
-      <tr>
-        <td>Potrafię obsługiwać systemy CMS typu Wordpress, Joomla, Drupal lub podobne</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>
-          Potrafię postawić systemy CMS typu Wordpress, Joomla, Drupal lub podobne na serwerze na którym mam tylko
-          dostęp przez SSH
-        </td>
-        <td>T (z Google)</td>
-      </tr>
-      <tr>
-        <td>Potrafię zmodyfikować istniejący szablon jakiegoś CMSa</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Potrafię napisać od zera nowy szablon jakiegoś CMSa</td>
-        <td>Pewnie T, ale nie próbowałam</td>
-      </tr>
-      <tr>
-        <td>Potrafię poruszać się w konsoli linuksowej / konsoli OSX</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Wiem do czego służą polecenia chmod, grep, cat, ls, cp, rm, mv</td>
-        <td>chmod, grep, cat, ls, cp, rm, mv</td>
-      </tr>
-      <tr>
-        <td>Potrafię korzystać z narzędzia Chrome Inspector lub Firefox Dev Tools</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Rozumiem czym są statusy HTTP i potrafię powiedzieć co oznaczają kody: 200, 302, 404, 500</td>
-        <td>T</td>
-      </tr>
-      <tr>
-        <td>Wiem co to SQLInjection, CSRF, Cookies, certyfikat HTTPS</td>
-        <td>SQLInjection, Cookies, certyfikat HTTPS</td>
-      </tr>
-      <tr>
-        <td>Wiem co to CORS</td>
-        <td>N</td>
-      </tr>
-      <tr>
-        <td>Potrafię zrozumieć pliki konfiguracyjne Nginxa lub Apache’a</td>
-        <td>Nie wiem, nie widziałam ich</td>
-      </tr>
-      <tr>
-        <td>Wiem co to Ansible lub Chef lub Puppet</td>
-        <td>N</td>
-      </tr>
+      <tbody>
+        <tr>
+          <td>Wiem czym się różni EcmaScript 6 od ES5</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Wiem co nowego jest w ES7 lub ES8</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>
+            Potrafię pisać testy automatyczne zachowania stron internetowych przy pomocy narzędzi (np. Selenium,
+            CasperJS, TestComplete Web, TestCafe)
+          </td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>Potrafię pisać szablony typu Mako, Jinja lub inne</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>Bez problemu czytam dokumentację w języku angielskim</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Potrafię pisać dokumentację w języku angielskim</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Potrafię pracować na systemie Linux (np. Ubuntu)</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Potrafię pracować na systemie OS X</td>
+          <td>Raczej T</td>
+        </tr>
+        <tr>
+          <td>Potrafię obsługiwać systemy CMS typu Wordpress, Joomla, Drupal lub podobne</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>
+            Potrafię postawić systemy CMS typu Wordpress, Joomla, Drupal lub podobne na serwerze na którym mam tylko
+            dostęp przez SSH
+          </td>
+          <td>T (z Google)</td>
+        </tr>
+        <tr>
+          <td>Potrafię zmodyfikować istniejący szablon jakiegoś CMSa</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Potrafię napisać od zera nowy szablon jakiegoś CMSa</td>
+          <td>Pewnie T, ale nie próbowałam</td>
+        </tr>
+        <tr>
+          <td>Potrafię poruszać się w konsoli linuksowej / konsoli OSX</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Wiem do czego służą polecenia chmod, grep, cat, ls, cp, rm, mv</td>
+          <td>chmod, grep, cat, ls, cp, rm, mv</td>
+        </tr>
+        <tr>
+          <td>Potrafię korzystać z narzędzia Chrome Inspector lub Firefox Dev Tools</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Rozumiem czym są statusy HTTP i potrafię powiedzieć co oznaczają kody: 200, 302, 404, 500</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <td>Wiem co to SQLInjection, CSRF, Cookies, certyfikat HTTPS</td>
+          <td>SQLInjection, Cookies, certyfikat HTTPS</td>
+        </tr>
+        <tr>
+          <td>Wiem co to CORS</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>Potrafię zrozumieć pliki konfiguracyjne Nginxa lub Apache’a</td>
+          <td>Nie wiem, nie widziałam ich</td>
+        </tr>
+        <tr>
+          <td>Wiem co to Ansible lub Chef lub Puppet</td>
+          <td>N</td>
+        </tr>
+      </tbody>
     </table>
   </div>,
   document.getElementById("root")
